@@ -9,7 +9,7 @@ Esse projeto foi feito durante o módulo do front-end no curso de Desenvolviment
  - Usuário se inscrever em uma viagem
  
 # Rodando a aplicação
- 1. Clonar o projeto 
+ 1. Clonando o projeto 
  -  https://github.com/Martthus/LabeX.git
  2. Acessando a pasta onde contem a raiz do projeto: src
  -  cd LabeX
