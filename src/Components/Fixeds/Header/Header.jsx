@@ -11,7 +11,7 @@ export default function Header(props) {
     return (
         <Main>
             <Logo>
-                <img src={icon} alt="" /> <h2>Future &#x2716;space</h2>
+                <img src={icon} alt="" /> <h2>LabeX</h2>
                 {history.location.pathname === "/" ? <div></div> : <div></div>}
             </Logo>
             <Title><h2>{props.name}</h2></Title>
