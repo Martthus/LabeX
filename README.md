@@ -1,6 +1,6 @@
 # LabeX 
 
-<p>Esse projeto foi feito durante o módulo do front-end no curso de Desenvolvimento full-stack, e é sobre um site de viagens espaciais.</p>
+<p>Esse projeto foi feito durante o módulo do front-end no curso de Desenvolvimento full-stack, trata-se de um aplicativo web de viagens espaciais. Onde usuários podem se inscrever nas viagens de seu interesse, onde ficaram em uma lista de espera e apenas o *ADM* poderá aprovar o usuário. </p>
 
 ![fundo1](https://user-images.githubusercontent.com/66175793/96944161-7a161800-14b0-11eb-9596-ac70b9635f66.png)
 
