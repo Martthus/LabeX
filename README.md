@@ -14,8 +14,12 @@
  #### Restritas a usuários:
  - [x] *ADM* - Criar viagens
  - [x] *ADM* - Detalhes das viagens
+ - [x] *ADM* - Aprovar ou rejeitar passageiro a uma viagem
  
- > Projeto em atualização de responsividade
+ > Projeto de atualização de responsividade :biohazard: 
+ > ##### Atualmente rodando em:
+ > - [x] Desktop 1920px && 1600px
+ > - [ ] Mobile iphone 6/7/8 - *Ainda sofrendo modificações*
  
 # Rodando a aplicação
  - [x] Clonando o projeto 
@@ -34,4 +38,3 @@
  ```
   npm start
  ```
-@Martthus
