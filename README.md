@@ -5,16 +5,22 @@
 ![fundo1](https://user-images.githubusercontent.com/66175793/96944161-7a161800-14b0-11eb-9596-ac70b9635f66.png)
 
 # Principais funcionalidades
- - [ ] Autenticação de adm
- - [ ] Áreas restritas no site
- - [ ] Criar viagens apenas sendo adm
- - [ ] Ver viagens disponíveis
- - [ ] Usuário se inscrever em uma viagem
+ #### Acesso liberado a usuários sem cadastro/login:
+ 
+ - [x] Ver viagens disponíveis
+ - [x] Usuário se inscrever em uma viagem
+ - [x] Login e Cadastro
+ 
+ #### Restritas a usuários:
+ - [x] *ADM* - Criar viagens
+ - [x] *ADM* - Detalhes das viagens
+ 
+ > Projeto em atualização de responsividade
  
 # Rodando a aplicação
  - [x] Clonando o projeto 
  ```
-  [Repositório](https://github.com/Martthus/LabeX.git)
+  https://github.com/Martthus/LabeX.git
  ```
  - [x] Acessando a pasta onde contem a raiz do projeto: /LabeX
  ```
