@@ -9,11 +9,18 @@ Esse projeto foi feito durante o módulo do front-end no curso de Desenvolviment
  - Usuário se inscrever em uma viagem
  
 # Rodando a aplicação
- 1. Clonando o projeto 
- -  https://github.com/Martthus/LabeX.git
- 2. Acessando a pasta onde contem a raiz do projeto: /LabeX
- -  cd LabeX
- 3. Instalando as dependências
- -  npm i 
- 4. Por fim executando a aplicação
- -  npm start
+ - [x] Clonando o projeto 
+ ```
+  https://github.com/Martthus/LabeX.git
+ ```
+ - [x] Acessando a pasta onde contem a raiz do projeto: /LabeX
+ ```
+  cd LabeX
+ ```
+ - [x] Instalando as dependências
+ ```
+  npm i
+ ```
+ - [x] Por fim executando a aplicação
+ ```
+  npm start
