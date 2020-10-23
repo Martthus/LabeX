@@ -11,7 +11,7 @@ Esse projeto foi feito durante o módulo do front-end no curso de Desenvolviment
 # Rodando a aplicação
  1. Clonando o projeto 
  -  https://github.com/Martthus/LabeX.git
- 2. Acessando a pasta onde contem a raiz do projeto: /src
+ 2. Acessando a pasta onde contem a raiz do projeto: /LabeX
  -  cd LabeX
  3. Instalando as dependências
  -  npm i 
