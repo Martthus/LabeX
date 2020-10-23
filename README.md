@@ -11,7 +11,7 @@
  - [x] Usuário se inscrever em uma viagem
  - [x] Login e Cadastro
  
- #### Restritas a usuários:
+ #### Restrito a Adm:
  - [x] *ADM* - Criar viagens
  - [x] *ADM* - Detalhes das viagens
  - [x] *ADM* - Aprovar ou rejeitar passageiro a uma viagem
