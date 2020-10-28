@@ -66,7 +66,6 @@ export default function CreateTripPage() {
                                     name="name"
                                     value={form.name}
                                     onChange={handleInputChange}
-                                    // pattern="(\D{5,}\s*)"
                                     required
                                 />
                                 <label htmlFor="name">Nome da viajem</label>

@@ -12,7 +12,6 @@ export default function Header(props) {
         <Main>
             <Logo>
                 <img src={icon} alt="" /> <h2>LabeX</h2>
-                {history.location.pathname === "/" ? <div></div> : <div></div>}
             </Logo>
             <Title><h2>{props.name}</h2></Title>
             <Buttons>
