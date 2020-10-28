@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import { useHistory } from 'react-router-dom'
-import { Main, ButtonMenu, DivMap, DivCarousel } from './styles';
+import { Main, DivMap, DivCarousel } from './styles';
 import image1 from './imgs/10504.jpg'
 import image2 from './imgs/1285.jpg'
 import image3 from './imgs/1700.jpg'
