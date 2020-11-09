@@ -1,9 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import notFound from './img/404.gif'
 import { Container, Content, Main } from './styles'
 
-export default function NotFound(props) {
+export default function NotFound() {
     const [mouseMove, setMouseMove] = React.useState({ x: 0, y: 0 })
     const history = useHistory()
 
@@ -12,8 +11,8 @@ export default function NotFound(props) {
     }
     const container = (e) => {
         setMouseMove({
-            x: - e.clientX/5,
-            y: - e.clientY/5
+            x: - e.clientX / 5,
+            y: - e.clientY / 5
         })
     }
     return (

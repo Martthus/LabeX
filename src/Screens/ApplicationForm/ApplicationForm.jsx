@@ -1,32 +1,22 @@
-import axios from 'axios'
 import React from 'react'
-import { useEffect } from 'react'
-import { useState } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { postData } from '../../Components/ConfigAxios/postData'
-import HeaderDetailsOrForm from '../../Components/Fixeds/Header/HeaderDetailsOrForm'
+import HeaderDetailsOrForm from '../Fixeds/Header/HeaderDetailsOrForm'
 import useForm from '../../Components/Hooks/useForm'
-import { goToBack, goToHome } from '../../Router/Coordinator'
+import { goToBack } from '../../Router/Coordinator'
 import { Main, FormContainer, InputContainer, ButtonSubscribe } from './styles'
+import useAxios from '../../Components/Hooks/useAxios'
+import { Countries_Url } from '../../Components/ConfigAxios/ConfigAxios'
 
 
 export default function ApplicationForm() {
+    const [countries] = useAxios({}, Countries_Url, 'all')
     const { form, onChange, resetState } = useForm({ name: "", age: "", applicationText: "", profession: "", country: "" })
-    const [selectCountry, setSelectCountry] = useState([])
     const pathParams = useParams()
     const history = useHistory()
 
     const applyTrip = () => {
         postData(`trips/${pathParams.id}/apply`, form, 'Registro efetuado com sucesso!', 'Registro não efetuado!', history)
-    }
-
-    const getCountry = () => {
-        axios.get("https://restcountries.eu/rest/v2/all")
-            .then((r) => {
-                setSelectCountry(r.data)
-            }).catch((e) => {
-                console.log(e)
-            })
     }
 
     const handleSubmit = (event) => {
@@ -38,9 +28,7 @@ export default function ApplicationForm() {
         const { name, value } = event.target
         onChange(name, value)
     }
-    useEffect(() => {
-        getCountry()
-    }, [])
+
     return (
         <>
             <HeaderDetailsOrForm
@@ -100,11 +88,12 @@ export default function ApplicationForm() {
                                 required
                             >
                                 <option value="undefined">Selecione um país</option>
-                                {selectCountry.map((c) => {
-                                    return (
-                                        <option key={c.name}>{c.name}</option>
-                                    )
-                                })}
+                                {countries.length > 0 &&
+                                    countries.map((c) => {
+                                        return (
+                                            <option key={c.name}>{c.name}</option>
+                                        )
+                                    })}
                             </select>
                             <label htmlFor="country">País</label>
                         </InputContainer>
