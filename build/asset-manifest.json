@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.282f8015.chunk.css",
+    "main.js": "/static/js/main.77425cf8.chunk.js",
+    "main.js.map": "/static/js/main.77425cf8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b67318f4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b67318f4.js.map",
+    "static/css/2.37c00e0b.chunk.css": "/static/css/2.37c00e0b.chunk.css",
+    "static/js/2.c8bf97e1.chunk.js": "/static/js/2.c8bf97e1.chunk.js",
+    "static/js/2.c8bf97e1.chunk.js.map": "/static/js/2.c8bf97e1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2f9834efef8de17e76c8baf1eb8676ea.js": "/precache-manifest.2f9834efef8de17e76c8baf1eb8676ea.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.37c00e0b.chunk.css.map": "/static/css/2.37c00e0b.chunk.css.map",
+    "static/css/main.282f8015.chunk.css.map": "/static/css/main.282f8015.chunk.css.map",
+    "static/js/2.c8bf97e1.chunk.js.LICENSE.txt": "/static/js/2.c8bf97e1.chunk.js.LICENSE.txt",
+    "static/media/10504.jpg": "/static/media/10504.6524c8d2.jpg",
+    "static/media/1134.jpg": "/static/media/1134.47616c69.jpg",
+    "static/media/1285.jpg": "/static/media/1285.dd99f03d.jpg",
+    "static/media/1700.jpg": "/static/media/1700.2698fd63.jpg",
+    "static/media/1856.jpg": "/static/media/1856.87b5cb7d.jpg",
+    "static/media/1873.jpg": "/static/media/1873.e367b720.jpg",
+    "static/media/1876.jpg": "/static/media/1876.81cc3de9.jpg",
+    "static/media/2262.jpg": "/static/media/2262.9177b630.jpg",
+    "static/media/2474215.jpg": "/static/media/2474215.b3bbb55f.jpg",
+    "static/media/33879.jpg": "/static/media/33879.b2536072.jpg",
+    "static/media/404.gif": "/static/media/404.04596996.gif",
+    "static/media/797.jpg": "/static/media/797.e109cfbd.jpg",
+    "static/media/astronautSFoguinho.png": "/static/media/astronautSFoguinho.707e62f0.png",
+    "static/media/icon-space.jpg": "/static/media/icon-space.068e8ab1.jpg",
+    "static/media/logoFooter.png": "/static/media/logoFooter.061304c4.png",
+    "static/media/p404.png": "/static/media/p404.9db9d742.png",
+    "static/media/styles.css": "/static/media/revicons.2feb69cc.eot",
+    "static/media/star-background.jpg": "/static/media/star-background.527808a7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b67318f4.js",
+    "static/css/2.37c00e0b.chunk.css",
+    "static/js/2.c8bf97e1.chunk.js",
+    "static/css/main.282f8015.chunk.css",
+    "static/js/main.77425cf8.chunk.js"
+  ]
+}

@@ -3,21 +3,21 @@ import { useHistory } from 'react-router-dom'
 import './styles.scss'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Main, DivMenu, DivMap, Buttons, ButtonsMenu, DivCarousel } from './styles'
-import Header from '../../Components/Fixeds/Header/Header';
-import Footer from '../../Components/Fixeds/Footer/Footer';
+import { Main, DivMap, Buttons, DivCarousel } from './styles'
+import Header from '../Fixeds/Header/Header';
+import Footer from '../Fixeds/Footer/Footer';
 import useAxios from '../../Components/Hooks/useAxios';
 import { goToHome, goToDetailsTrip, goToApplicationForm, goToCreateTrip } from '../../Router/Coordinator';
 import { responsive, settings } from '../../Components/CarouselConfigs/CarouselConfigs';
+import { Base_Url } from '../../Components/ConfigAxios/ConfigAxios';
 
 export default function ListTripsPage() {
-    const [allTrips, updateAllTrips] = useAxios({}, 'trips')
+    const [allTrips] = useAxios({}, Base_Url, 'trips')
     const trip = allTrips.trips
 
     const history = useHistory()
     const token = window.localStorage.getItem("token")
 
-    
     return (
         <>
             <Header
