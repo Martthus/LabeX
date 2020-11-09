@@ -45,7 +45,7 @@ export const Div = styled.div`
     h4{
         margin: 0;
         display: inline;
-        font-size: 27px;
+        font-size: 21px;
     }
     @media screen and (max-width: 400px){
         width: 280px;

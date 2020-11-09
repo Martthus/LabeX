@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { postLoginData } from '../../Components/ConfigAxios/postLoginData'
-import HeaderSignIn from '../Fixeds/Header/HeaderSignIn'
+import HeaderSignIn from '../../Components/Fixeds/Header/HeaderSignIn'
 import useForm from '../../Components/Hooks/useForm'
 import { useUnProtect } from '../../Components/ProtectedRoute/useUnProtect'
 import { goToSignUp } from '../../Router/Coordinator'

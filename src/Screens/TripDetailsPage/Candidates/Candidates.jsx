@@ -16,7 +16,6 @@ export default function Candidates(props) {
                                     <ButtonsDecide
                                         candidate={candidate}
                                         decideCandidate={props.decideCandidate}
-                                        updateDetail={props.updateDetail}
                                     />
                                 </DivMap>
                             </div>
