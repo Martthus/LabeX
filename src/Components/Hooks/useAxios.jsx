@@ -3,15 +3,15 @@ import { useState } from "react"
 
 const { default: getData } = require("../ConfigAxios/getData")
 
-const useAxios = (initialState, url, endpoint, headerCors) => {
+const useAxios = (initialState, endpoint) => {
     const [data, setData] = useState(initialState)
 
     useEffect(() => {
-        getData(url, endpoint, setData, headerCors)
+        getData(endpoint, setData)
     }, [endpoint])
 
     const updateData = () => {
-        getData(url, endpoint, setData, headerCors)
+        getData(endpoint, setData)
     }
     return [data, updateData]
 }

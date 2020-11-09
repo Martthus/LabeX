@@ -2,17 +2,16 @@ import React from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { useProtect } from '../../Components/ProtectedRoute/useProtect'
 import 'react-multi-carousel/lib/styles.css';
-import { Main, Div } from './styles'
+import { Main, Div, Buttons } from './styles'
 import Candidates from './Candidates/Candidates'
-import HeaderDetailsOrForm from '../Fixeds/Header/HeaderDetailsOrForm'
-import { goToBack } from '../../Router/Coordinator'
+import HeaderDetailsOrForm from '../../Components/Fixeds/Header/HeaderDetailsOrForm'
+import { goToBack, goToHome, goToList } from '../../Router/Coordinator'
 import useAxios from '../../Components/Hooks/useAxios'
 import { putData } from '../../Components/ConfigAxios/putData'
-import { Base_Url, headerCors} from '../../Components/ConfigAxios/ConfigAxios';
 
 export default function TripDetailsPage() {
     const pathParams = useParams()
-    const [detail, updateDetail] = useAxios({}, Base_Url, `trip/${pathParams.id}`, headerCors)
+    const [detail, updateDetail] = useAxios({}, `trip/${pathParams.id}`)
 
     const trip = detail.trip
     const history = useHistory()
@@ -32,7 +31,7 @@ export default function TripDetailsPage() {
             <Main>
                 <div>
                     <Div>
-                        <h4>{trip && trip.name}</h4>
+                        <p><b>Nome da viajem:</b><h4>{trip && trip.name}</h4></p>
                         <p><b>Planeta:</b> {trip && trip.planet}</p>
                         <p><b>Duração:</b> {trip && trip.durationInDays} dias</p>
                         <p><b>Descrição:</b> {trip && trip.description}</p>
@@ -42,7 +41,6 @@ export default function TripDetailsPage() {
                         {trip ?
                             <Candidates candidates={trip && trip.candidates}
                                 decideCandidate={decideCandidate}
-                                updateDetail={updateDetail}
                             />
                             : <div>Carregando..</div>}
                     </Div>

@@ -1,8 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import useForm from '../../Components/Hooks/useForm'
-import { ButtonLogin, InputContainer, Main, TextCenter, Card, SpanSignUp } from './styles'
-import HeaderSignIn from '../Fixeds/Header/HeaderSignIn'
+import { ButtonLogin, InputContainer, Main, TextCenter, ButtonsMenuSignUp, Card, SpanSignUp } from './styles'
+import HeaderSignIn from '../../Components/Fixeds/Header/HeaderSignIn'
 import { goToLogin } from '../../Router/Coordinator'
 import { postSignupData } from '../../Components/ConfigAxios/postLoginData'
 import { useUnProtect } from '../../Components/ProtectedRoute/useUnProtect'
@@ -37,8 +37,8 @@ export default function SignUp() {
                                 name="email"
                                 value={form.email}
                                 onChange={handleInputChange}
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                                title="Ex: 123@123.com"
+                                // pattern="[A-Za-z]{3,}"
+                                title="No mínimo tres letras"
                                 required
                             />
                             <label htmlFor="email">Email</label>
@@ -47,7 +47,7 @@ export default function SignUp() {
                             <input
                                 type="password"
                                 name="password"
-                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                // pattern="\d{3,}"
                                 value={form.password}
                                 onChange={handleInputChange}
                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]){8,}"
