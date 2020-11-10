@@ -16,6 +16,6 @@ export const getData = (endpoint, setData) => {
         .catch((error) => {
             console.log(error)
         })
-}
+};
 
 export default getData
