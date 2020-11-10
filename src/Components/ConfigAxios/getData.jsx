@@ -8,6 +8,6 @@ export const getData = (url, endpoint, setData, headerCors) => {
         .catch((error) => {
             console.log(error)
         })
-}
+};
 
 export default getData
